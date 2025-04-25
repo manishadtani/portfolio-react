@@ -5,12 +5,7 @@ import {
   project2Mobile,
   project3Laptop,
   project3Mobile,
-  project4Laptop,
-  project4Mobile,
-  project5Laptop,
-  project5Mobile,
-  project6Laptop,
-  project6Mobile,
+ 
 } from "./projectImages";
 
 export const projectData = [
@@ -38,13 +33,6 @@ export const projectData = [
     codeLink: "https://github.com/manishadtani/classinsta",
     liveLink: "",
   },
-  // {
-  //   id: 4,
-  //   image: project4Laptop,
-  //   transitionImage: project4Mobile,
-  //   title: "IT Company",
-  //   codeLink: "https://github.com/monciego/coderig-landing-page",
-  //   liveLink: "https://codeegrid.netlify.app/",
-  // },
+  
  
 ];
