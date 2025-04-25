@@ -18,9 +18,9 @@ export const AboutContent = styled.div`
 
 export const AboutImageContainer = styled.div`
   position: relative;
-  width: 45%;
-  height: 28rem;
-  z-index: 3;
+  width: 40%;
+  height: 30rem;
+  
 
   &::after {
     content: "";
@@ -37,6 +37,7 @@ export const AboutImageContainer = styled.div`
   &::before {
     content: "";
     position: absolute;
+    objectFit: 'cover'
     inset: 0 0 0 0;
     background: rgb(13, 14, 14, 0.199);
     z-index: 2;
@@ -59,9 +60,11 @@ export const AboutImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top; /* 👈 Image ko top align karta hai */
   position: relative;
   border-radius: 1px;
 `;
+
 
 export const AboutDetailsContainer = styled.div`
   position: relative;

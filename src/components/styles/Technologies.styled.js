@@ -21,6 +21,7 @@ export const TechnologiesIcons = styled.div`
 
 export const TechnologyIcon = styled.img`
   height: 32px;
+  filter: invert(1); /* 👈 Add this line */
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
     height: 24px;

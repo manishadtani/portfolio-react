@@ -32,7 +32,7 @@ const Footer = () => {
 
       <FooterBigLinkContainer>
         <FooterBigLink
-          href="mailto:jerichobantiquete@gmail.com"
+          href="mailto:manishadtani99@gmail.com"
           data-hover="Let's talk!"
         >
           Need a developer?
@@ -41,38 +41,32 @@ const Footer = () => {
       <FooterContacts>
         <FooterContact>
           <ContactHeader>Call me</ContactHeader>
-          <ContactLink href="tel:+639951076206">+639951076206</ContactLink>
+          <ContactLink href="tel:+639951076206">+91 6377499766</ContactLink>
         </FooterContact>
         <FooterContact>
           <ContactHeader>Social</ContactHeader>{" "}
           <FooterSocials>
             <ContactLink
-              href="https://github.com/monciego"
+              href="https://github.com/manishadtani"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </ContactLink>
             <ContactLink
-              href="https://www.linkedin.com/in/jericho-bantiquete-450541179/"
+              href="https://www.linkedin.com/in/manish-adtani-41291027b/"
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
             </ContactLink>
-            <ContactLink
-              href="https://www.instagram.com/monciego/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </ContactLink>
+         
           </FooterSocials>
         </FooterContact>
         <FooterContact>
           <ContactHeader>Let's grab a coffee.</ContactHeader>
-          <ContactLink href="tel:+639951076206">
-            jerichobantiquete@gmail.com
+          <ContactLink href="tel:6377499766">
+            manishadtani99@gmail.com
           </ContactLink>
         </FooterContact>
       </FooterContacts>
@@ -86,11 +80,11 @@ const Footer = () => {
         <small>
           &copy; Copyright {year},{" "}
           <Small
-            href="https://github.com/monciego"
+
             target="_blank"
             rel="noopener noreferrer"
           >
-            Jericho Bantiquete
+           Manish Adtani
           </Small>
         </small>
       </Copyright>
