@@ -33,8 +33,8 @@ function App() {
           <Home />
           <Projects />
           <About />
-          <ParallaxComponent />
           <Technologies />
+          <ParallaxComponent />
           <Footer />
         </>
       </ThemeProvider>

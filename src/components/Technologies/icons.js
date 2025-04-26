@@ -11,7 +11,6 @@ import bootstrap from "../../assets/technologies/bootstrap.svg";
 import sass from "../../assets/technologies/sass.svg";
 import npm from "../../assets/technologies/npm.svg";
 import git from "../../assets/technologies/git.svg";
-import github from "../../assets/technologies/github.svg";
 import vscode from "../../assets/technologies/visual-studio-code.svg";
 
 export const iconsData = [
@@ -68,23 +67,19 @@ export const iconsData = [
     icon: git,
     name: "Git",
   },
+ 
   {
     id: 11,
-    icon: github,
-    name: "GitHub",
-  },
-  {
-    id: 12,
     icon: html5,
     name: "HTML5",
   },
   {
-    id: 13,
+    id: 12,
     icon: css3,
     name: "CSS3",
   },
   {
-    id: 14,
+    id: 13,
     icon: vscode,
     name: "Visual Studio Code",
   },
