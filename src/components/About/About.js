@@ -12,7 +12,7 @@
   import { StyledParagraph } from "../styles/Typography.styled";
   import myImage from "../../assets/manishpp.jpg";
   import downloadIcon from "../../assets/icons/download-icon.svg";
-  import resume from "../../assets/manish__resume.pdf";
+  import resume from "../../assets/ManishResume.pdf";
 
   const About = () => {
     return (

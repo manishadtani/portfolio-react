@@ -36,14 +36,7 @@ const ProjectCardComponent = ({
               <GoMarkGithub />
               <LinkName>Github Code</LinkName>
             </ProjectCodeLink>
-            <ProjectLiveLink
-              href={liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BiLinkExternal />
-              <LinkName>Live</LinkName>
-            </ProjectLiveLink>
+            
           </ProjectDetails>
         </ProjectCard>
       </IconContext.Provider>
