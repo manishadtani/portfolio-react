@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 
+// ✨ Reusable hover underline style
 export const HoverStyle = css`
   content: "";
   position: absolute;
@@ -12,17 +13,20 @@ export const HoverStyle = css`
   transition: 0.3s ease-in-out;
 `;
 
+// ✨ Reusable flex style
 export const Flex = css`
   display: flex;
   align-items: center;
   gap: 0.5rem;
 `;
 
+// 🔷 Section Wrapper
 export const StyledProjects = styled.section`
   background-color: ${({ theme }) => theme.backgroundColor.light};
   color: ${({ theme }) => theme.color.darkGray};
 `;
 
+// 🔷 Container for all project cards
 export const ProjectsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -32,22 +36,33 @@ export const ProjectsContainer = styled.div`
   margin-top: 3rem;
 `;
 
+// 🔷 Project image (normal view)
 export const ProjectImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   position: relative;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    object-fit: contain;
+  }
 `;
 
+// 🔷 Project image (transition on hover)
 export const ProjectTransitionImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
   opacity: 0;
   object-fit: cover;
   position: absolute;
   transition: 0.3s ease;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    object-fit: contain;
+  }
 `;
 
+// 🔷 Overlay details shown on hover
 export const ProjectDetails = styled.div`
   position: absolute;
   bottom: 0;
@@ -67,50 +82,18 @@ export const ProjectDetails = styled.div`
   transition: 0.6s ease;
   margin-top: 2rem;
   z-index: 5;
-`;
 
-export const ProjectTitle = styled.span``;
-
-export const LinkName = styled.span``;
-
-export const ProjectCodeLink = styled.a`
-  position: absolute;
-  bottom: 2rem;
-  left: 9rem;
-  color: ${({ theme }) => theme.color.light};
-  font-size: 14px;
-  ${Flex}
-
-  ${LinkName}::after {
-    ${HoverStyle}
-  }
-
-  ${LinkName}:hover::after {
-    width: 100%;
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    padding: 2rem 1.5rem;
   }
 `;
 
-export const ProjectLiveLink = styled.a`
-  position: absolute;
-  bottom: 2rem;
-  left: 3rem;
-  color: ${({ theme }) => theme.color.light};
-  font-size: 14px;
-  ${Flex}
-
-  ${LinkName}::after {
-    ${HoverStyle}
-  }
-
-  ${LinkName}:hover::after {
-    width: 100%;
-  }
-`;
-
+// 🔷 Main project card wrapper
 export const ProjectCard = styled.article`
   background: #fff;
   width: 32rem;
-  height: 23rem;
+  height: auto;
+  aspect-ratio: 16 / 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,13 +105,13 @@ export const ProjectCard = styled.article`
   &::after {
     content: "";
     position: absolute;
-    inset: 0 0 0 0;
-    background: rgb(13, 14, 14, 0.1);
+    inset: 0;
+    background: rgba(13, 14, 14, 0.1);
     z-index: 2;
   }
 
   &:hover {
-    box-shadow: 0 2px 15px rgba(13, 14, 14) 15%;
+    box-shadow: 0 2px 15px rgba(13, 14, 14, 0.15);
   }
 
   &:hover ${ProjectDetails} {
@@ -144,7 +127,50 @@ export const ProjectCard = styled.article`
   @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 25rem;
   }
+
   @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    width: 100%;
+  }
+`;
+
+// 🔷 Project title
+export const ProjectTitle = styled.span``;
+
+// 🔷 Link text label
+export const LinkName = styled.span``;
+
+// 🔷 Code link container
+export const ProjectCodeLink = styled.a`
+  position: absolute;
+  bottom: 2rem;
+  left: 9rem;
+  color: ${({ theme }) => theme.color.light};
+  font-size: 14px;
+  ${Flex};
+
+  ${LinkName}::after {
+    ${HoverStyle}
+  }
+
+  ${LinkName}:hover::after {
+    width: 100%;
+  }
+`;
+
+// 🔷 Live link container
+export const ProjectLiveLink = styled.a`
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+  color: ${({ theme }) => theme.color.light};
+  font-size: 14px;
+  ${Flex};
+
+  ${LinkName}::after {
+    ${HoverStyle}
+  }
+
+  ${LinkName}:hover::after {
     width: 100%;
   }
 `;
